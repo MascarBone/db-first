@@ -1,0 +1,72 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario,
+cercando di inserire più dati possibili per evitare di dover aggiornare la tabella in futuro.
+
+
+id                          Number          SMALLINT        (PRIMARY_KEY, NOTNULL, UNIQUE)      AUTO_INCREMENT
+
+numero_seriale              String          VARCHAR(13)     (NOTNULL, UNIQUE)
+
+marca                       String          VARCHAR(30)     (NOTNULL)
+
+carrozzeria                 String          VARCHAR(30)     (NOTNULL)
+
+modello                     String          VARCHAR(20)     (NOTNULL)
+
+modello_versione            String          VARCHAR(20)     (NOTNULL)
+
+tagliando                   Number          TINYINT         (NULL)                              //BOOLEANO           
+
+colore                      String          VARCHAR(16)     (NOTNULL)
+
+vernice                     String          VARCHAR(16)     (NULL)
+
+rivestimento                String          VARCHAR(100)    (NOTNULL)
+
+alimentazione               String          VARCHAR(6)      (NOTNULL)
+
+consumo_combinato           Number          FLOAT(2,1)      (NOTNULL)
+
+consumo_urbano              Number          FLOAT(2,1)      (NOTNULL)
+
+consumo_extraurbano         Number          FLOAT(2,1)      (NOTNULL)
+
+classe_emissioni            String          VARCHAR(2)      (NOTNULL)
+
+emissioni                   Number          SMALLINT        (NOTNULL)
+
+cilindrata                  Number          SMALLINT        (NOTNULL)
+
+potenza                     Number          SMALLINT        (NOTNULL)
+
+cambio                      String          VARCHAR(10)     (NOTNULL)
+
+marce                       Number          TINYINT         (NOTNULL)
+
+illuminazione               String          VARCHAR(30)     (NULL)
+
+anno_immatricolazione       Date            YEAR            (NOTNULL)
+
+km_percorsi                 Number          MEDIUMINT       (NOTNULL, DEFAULT(0))
+
+dimensioni                  String          VARCHAR(255)    (NULL)
+
+peso                        Number          SMALLINT        (NULL)
+
+porte                       Number          TINYINT         (NOTNULL)
+
+sedute                      Number          TINYINT         (NOTNULL)
+
+prezzo                      Number          FLOAT(8,2)      (NOTNULL)
+
+
+
+comfort                     String          TEXT            (NULL)                              es. climatizzazione, bracciolo, cruise control, alzacristalli elettrici, specchietti laterali elettrici
+
+elettronica                 String          TEXT            (NULL)                              es. radio, bluetooth, computer di bordo
+
+accessori                   String          TEXT            (NULL)                              es. cerchi, wireless charging,
+
+sicurezza                   String          TEXT            (NULL)                              es. ABS, airbag, ESP, antifurto, chiusura centralizzata, controllo automatico trazione, fendinebbia, servosterzo
+
+
+descrizione                 String          TEXT            (NULL)
