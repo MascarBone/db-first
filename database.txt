@@ -6,13 +6,13 @@ id                          Number          SMALLINT        (PRIMARY_KEY, NOTNUL
 
 numero_seriale              String          VARCHAR(13)     (NOTNULL, UNIQUE)
 
-marca                       String          VARCHAR(30)     (NOTNULL)
+marca                       String          VARCHAR(30)     (NOTNULL)                           //Volkswagen
 
-carrozzeria                 String          VARCHAR(30)     (NOTNULL)
+carrozzeria                 String          VARCHAR(30)     (NOTNULL)                           //Berlina
 
-modello                     String          VARCHAR(20)     (NOTNULL)
+modello                     String          VARCHAR(20)     (NOTNULL)                           //Polo
 
-modello_versione            String          VARCHAR(20)     (NOTNULL)
+modello_versione            String          VARCHAR(20)     (NOTNULL)                           //Serie 3
 
 tagliando                   Number          TINYINT         (NULL)                              //BOOLEANO           
 
@@ -20,7 +20,7 @@ colore                      String          VARCHAR(16)     (NOTNULL)
 
 vernice                     String          VARCHAR(16)     (NULL)
 
-rivestimento                String          VARCHAR(100)    (NOTNULL)
+rivestimento                String          VARCHAR(100)    (NOTNULL)                           //Stoffa, Nero
 
 alimentazione               String          VARCHAR(6)      (NOTNULL)
 
@@ -57,6 +57,10 @@ porte                       Number          TINYINT         (NOTNULL)
 sedute                      Number          TINYINT         (NOTNULL)
 
 prezzo                      Number          FLOAT(8,2)      (NOTNULL)
+
+immagine                     String          VARCHAR(255)    (NULL)
+
+status                      String          VARCHAR(10)     (NULL)
 
 
 
